@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Te Hacemos Tu Página Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .btn-nequi {
+      background-color: #8700f5;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .info {
+      margin-top: 30px;
+      background-color: white;
+      display: none;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .whatsapp {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>¡Creamos tu página web a la medida!</h1>
+  <p>Diseños rápidos, profesionales y económicos.</p>
+
+  <button class="btn-nequi" onclick="mostrarInfo()">Pagar con Nequi</button>
+
+  <div class="info" id="info">
+    <h2>Datos para el pago</h2>
+    <p><strong>Número Nequi:</strong> 3001234567</p>
+    <p><strong>Monto:</strong> $100.000 COP</p>
+    <p>Después de pagar, envíanos el comprobante por WhatsApp:</p>
+    <a class="whatsapp" href="https://wa.me/573001234567?text=Hola,+ya+realicé+el+pago+por+Nequi+y+quiero+mi+página+web." target="_blank">
+      Enviar Comprobante por WhatsApp
+    </a>
+  </div>
+
+  <script>
+    function mostrarInfo() {
+      document.getElementById("info").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
